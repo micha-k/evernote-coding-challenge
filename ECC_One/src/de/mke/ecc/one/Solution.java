@@ -4,8 +4,9 @@ import java.io.InputStreamReader;
 
 /*
  * Solution.java
+ * 
  * My solution of Q1 of the Evernote Coding Challenge (https://evernote.com/careers/challenge.php)
- * dev@michaelkessel.de, 2014
+ * MK, 2014
  */
 public class Solution {
 	
