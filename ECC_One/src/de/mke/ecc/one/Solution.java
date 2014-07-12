@@ -57,7 +57,36 @@ public class Solution {
 	 * STDIN/STDOUT Handling
 	 */
 	public static void main(String[] args) throws Exception {
-
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String line = br.readLine();
+        int n = Integer.parseInt(line);
+        Solution sol = new Solution(n);
+        
+        while(true) {
+        	line = br.readLine();
+        	n = line.length() > 2 ? Integer.parseInt(line.substring(2)) : 0;
+        	
+        	switch(line.toUpperCase().charAt(0)) {
+        		case 'A':
+        			for(int i=1; i<= n; i++) {
+        				line = br.readLine();
+        				sol.append(line);
+        			}
+        			break;
+        		case 'R':        			
+        			for(int i=1; i<= n; i++) {
+        				sol.remove();
+        			}
+        			break;
+        		case 'L':        			
+        			System.out.println(sol.list());
+        			break;
+        		case 'Q':
+        			System.exit(0);
+        			break;
+        	}
+        }
 	}
 	
 	/*
