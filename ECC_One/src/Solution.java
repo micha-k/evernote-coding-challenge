@@ -1,4 +1,4 @@
-package de.mke.ecc.one;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 

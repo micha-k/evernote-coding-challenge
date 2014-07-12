@@ -1,4 +1,4 @@
-package de.mke.ecc.one;
+
 import static org.junit.Assert.*;
 
 import org.junit.Before;
